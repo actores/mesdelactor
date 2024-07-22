@@ -1,0 +1,108 @@
+.navbar{
+    position: absolute;
+}
+
+.container{
+    max-width: 60vw;
+}
+.banner_desktop{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/banner.png');
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.item_nav{
+    color: #FCC207;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.custom-shape-divider-bottom-1721679997 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1721679997 svg {
+    position: relative;
+    display: block;
+    width: calc(278% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1721679997 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.taller_card{
+    width: 100%;
+}
+
+
+.con {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-template-rows: repeat(2, 1fr);    /* Dos filas */
+    gap: 10px;
+    padding: 10px;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.item {
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.item1 {
+    /* background-color: #ff6f61; Color de fondo */
+    background-image: url('../assets/taller_01.svg');
+    background-size: cover;
+    grid-column: span 2; /* Ocupa dos columnas */
+}
+
+.item2 {
+    /* background-color: #6b5b95; Color de fondo */
+    background-image: url('../assets/taller_02.svg');
+    background-size: cover;
+}
+
+.item3 {
+    /* background-color: #88b04b; Color de fondo */
+    background-image: url('../assets/taller_03.svg');
+    background-size: cover;
+}
+
+.item4 {
+    background-color: #f7bb92; /* Color de fondo */
+    grid-column: span 2; /* Ocupa dos columnas */
+}
+
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Ajusta la altura de flotación aquí */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .content_titular_desktop {
+    animation: float 3s ease-in-out infinite; /* Ajusta la duración y la velocidad aquí */
+  }
