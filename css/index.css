@@ -434,7 +434,7 @@ body {
 @media (max-width: 1000px) {
     .banner_desktop {
         background-image: url('../assets/banner_mobile.svg');
-        background-position: center center;
+        background-position: center bottom;
         background-size: cover !important;
         justify-content: start !important;
         align-items: start !important;
