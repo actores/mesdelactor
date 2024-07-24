@@ -14,12 +14,28 @@
 
 <body>
 
+
+    <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#modalMnu">
+        MENÚ
+    </button>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <ul class="list-group">
+                    <a class="list-group-item menu_mobile" id="#inicio">Calendario</a>
+                    <a class="list-group-item menu_mobile" href="#calendar">Talleres</a>
+                    <a class="list-group-item menu_mobile" href="#conversation">Conversatorio</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     <nav class="navbar navbar-expand-lg  w-100 p-relative" id="inicio">
         <div class="container" style="max-width: 80%;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                MENÚ
-            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav gap-5 align-items-center mt-5">
                     <li class="nav-item">
@@ -31,7 +47,7 @@
                     <li class="nav-item">
                         <a class="nav-link item_nav" href="#workshops">Talleres</a>
                     </li>
-                   
+
                     <li class="nav-item">
                         <a class="nav-link item_nav" href="#conversation">Conversatorio</a>
                     </li>
@@ -49,12 +65,12 @@
     </div>
 
 
-    
+
     <main>
         <div class="container">
             <section id="calendar" class="section section_calendar">
                 <div class="contend-titular w-100" data-aos="fade-left">
-                  
+
                     <span class="title_back">Calendario</span>
                     <h2 class="title_section">Calendario</h2>
                 </div>

@@ -45,3 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(actualizarContador, 1000);
 });
+
+
+let menu_mobile = document.getElementsByClassName('menu_mobile')
+
+menu_mobile.addEventListener('click', ()=>{
+    alert();
+})
