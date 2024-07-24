@@ -2,6 +2,7 @@
 
 * {
     font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -208,7 +209,7 @@ body {
 
 .title_event {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--secondary-color);
 }
 
@@ -228,6 +229,17 @@ body {
     background-color: var(--secondary-color);
     border: solid 1px var(--secondary-color);
     font-weight: bold;
+    width: 300px;
+}
+
+.btn_preinscribete_alt{
+    background-color: var(--text-color-date);
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: gray;
 }
 
 .btn_preinscribete:hover {
