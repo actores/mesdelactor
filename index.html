@@ -15,18 +15,18 @@
 <body>
 
 
-    <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#modalMnu">
+    <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#modalMenu">
         MENÚ
     </button>
 
 
     <!-- Modal -->
     <div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <ul class="list-group">
-                    <a class="list-group-item menu_mobile" id="#inicio">Calendario</a>
-                    <a class="list-group-item menu_mobile" href="#calendar">Talleres</a>
+                    <a class="list-group-item menu_mobile" href="#workshops">Talleres</a>
+                    <a class="list-group-item menu_mobile" href="#calendar">Calendario</a>
                     <a class="list-group-item menu_mobile" href="#conversation">Conversatorio</a>
                 </ul>
             </div>
@@ -58,9 +58,16 @@
 
 
     <div class="banner_desktop w-100 d-flex justify-content-center align-items-center">
-        <div class="contenedor-contador d-none">
-            <div class="title_mes"></div>
-            <h1 id="contador" class="contador"></h1>
+       
+        <div class="w-100 container" style="max-width: 80%;">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center flex-column">
+                    <div class="title_mes content_titular_desktop"></div>
+                    <h1 id="contador" class="contador"></h1>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                </div>
+            </div>
         </div>
     </div>
 

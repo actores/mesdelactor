@@ -20,25 +20,20 @@ body {
     position: absolute;
 }
 
+
+
 .navbar-toggler {
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
     color: #fff;
-    z-index: 2;
+    font-weight: 800;
+    padding: 1rem;
+    width: 160px;
     position: fixed;
-    right: 2rem;
-    width: 20%;
-    padding: 1em;
+    z-index: 1000;
+    right: 8px;
+    top: 8px;
     border-radius: 16px;
-    top: 2rem;
-    font-weight: bold;
-    font-size: 1em;
-
-}
-
-
-.navbar-toggler {
     display: none;
-    position: absolute;
 }
 
 
@@ -232,7 +227,7 @@ body {
     width: 300px;
 }
 
-.btn_preinscribete_alt{
+.btn_preinscribete_alt {
     background-color: var(--text-color-date);
 }
 
@@ -311,7 +306,6 @@ body {
 
 .content_titular_desktop {
     animation: float 3s ease-in-out infinite;
-    width: 50% !important;
     /* Ajusta la duración y la velocidad aquí */
 }
 
@@ -373,15 +367,13 @@ body {
 }
 
 .title_mes {
-    width: 700px;
+    min-width: 70%;
+    width: 70%;
     height: 500px;
     background-image: url(../assets/title.svg);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    position: absolute;
-    right: 400px;
-    bottom: 200px;
 }
 
 .contenedor-contador {
@@ -393,10 +385,9 @@ body {
 }
 
 .contador {
-    position: absolute;
-    width: 500px;
-    right: 400px;
-    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .numero {
@@ -426,6 +417,7 @@ body {
 
 
 
+
 @media (max-width: 1440px) {}
 
 @media (max-width: 1200px) {
@@ -442,21 +434,42 @@ body {
 @media (max-width: 1000px) {
     .banner_desktop {
         background-image: url('../assets/banner_mobile.svg');
-        background-position: center top;
+        background-position: center center;
+        background-size: cover !important;
         justify-content: start !important;
         align-items: start !important;
     }
 
     .title_mes {
-        display: none;
-    }
-
-    .navbar-toggler {
-        display: block;
+        /* display: none; */
     }
 
     .contador {
-        display: none;
+        /* display: none; */
+    }
+
+
+
+    .numero {
+        color: var(--primary-color);
+        font-size: 4rem;
+        font-weight: 1000;
+    }
+
+
+    .title_mes {
+        min-width: 100%;
+        width: 100%;
+        height: 500px;
+        background-image: url(../assets/title.svg);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .btn_preinscribete {
+        margin-top: 2rem;
+        width: 100%;
     }
 
     .contenedor_talleres {
@@ -465,16 +478,6 @@ body {
 
     .title_section {
         font-size: 2em !important;
-    }
-
-    .navbar-collapse ul {
-        background-color: var(--secondary-color);
-        display: flex;
-        color: #fff;
-        height: 70vh;
-        gap: 2rem;
-        padding: 4rem 0;
-        justify-content: space-between;
     }
 
     .list-group-item {
@@ -486,6 +489,9 @@ body {
         font-size: 2rem !important;
     }
 
+    .navbar-toggler{
+        display: block;
+    }
 }
 
 @media (max-width: 800px) {
@@ -496,6 +502,7 @@ body {
         gap: 2rem;
     }
 
+   
 
     /* Modales */
     body .modal .modal-body {
@@ -519,4 +526,17 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
     }
+}
+
+
+/* Modal Menú */
+.menu_mobile{
+    background-color: var(--secondary-color) !important;
+    border: solid 1px #ddd;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
 }

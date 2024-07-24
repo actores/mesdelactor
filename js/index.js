@@ -47,8 +47,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-let menu_mobile = document.getElementsByClassName('menu_mobile')
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener todos los enlaces dentro del modal
+    var menuItems = document.querySelectorAll('.menu_mobile');
 
-menu_mobile.addEventListener('click', ()=>{
-    alert();
-})
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            // Cerrar el modal
+            var modal = document.getElementById('modalMenu');
+            var bootstrapModal = bootstrap.Modal.getInstance(modal); // Utilizar Bootstrap 5
+            bootstrapModal.hide();
+        });
+    });
+});
