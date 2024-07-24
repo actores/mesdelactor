@@ -135,6 +135,11 @@ body {
     gap: 2rem;
 }
 
+.navbar ul li{
+    position: relative;
+    z-index: 1000;
+}
+
 .item1 {
     /* background-color: #ff6f61; Color de fondo */
     background-image: url('../assets/taller_02.svg');
