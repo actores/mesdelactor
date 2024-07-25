@@ -234,7 +234,8 @@ body {
 }
 
 .btn_preinscribete_alt {
-    background-color: var(--text-color-date);
+    background-color: var(--primary-color);
+    border: var(--primary-color) 1px solid;
 }
 
 .disabled {
